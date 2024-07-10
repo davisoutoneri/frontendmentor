@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #000505;
+    --secondary-color: #D72638;
+    --terciary-color: #F4D6CC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    color: var(--terciary-color);
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+header {
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.relevant-text {
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile-text {
+    width: 50rem;
+}
+
+#projects-collection {
+    width: 100%;
+    min-height: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1rem;
+}
+
+#projects-collection div {
+    border: 1px solid var(--secondary-color);
+    height: 30rem;
+    width: 100%;
+    gap: 1rem;
+
+    display: flex;
+
+}
+
+.project-card{
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    font-size: 1rem;
+}
+.project-card img {
+    height: 20rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-text {
+        width: 17rem;
+    }
+}
