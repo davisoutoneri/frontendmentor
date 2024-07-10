@@ -95,4 +95,8 @@ a {
     .profile-text {
         width: 17rem;
     }
+
+    #projects-collection {
+        grid-template-columns: 1fr;
+    }
 }
