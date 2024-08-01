@@ -1,2 +1,111 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+
+    /* - Family: [Inter](https://fonts.google.com/specimen/Inter)
+    - Weights: 400, 600, 700 */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Inter", sans-serif;
+    color: var(--white);
+}
+
+body, .container, .div-profile, .div-titles, .div-buttons, .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+
+    background-color: var(--grey900);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    background-color: var(--grey800);
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    /* height: 30rem; */
+}
+
+.container .div-profile{
+    gap: 1.5rem;
+}
+
+.container .div-profile .profile{
+    border-radius: 50%;
+    width: 6rem;
+}
+
+.container .div-profile .div-titles #name_title{
+    font-size: 1.6rem;
+}
+
+.container .div-profile .div-titles #place_title{
+    font-size: 0.9rem;
+    color: var(--green);
+}
+
+.container .div-profile #bio {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.container .div-buttons {
+    margin-top: 1rem;
+    width: 100%;
+    gap: 0.8rem;
+}
+
+.container .div-buttons .button {
+    font-size: 14px;
+    font-weight: 600;
+    background-color: var(--grey700);
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 2.5rem;
+
+    transition: all 0.3s ease-in;
+} .container .div-buttons .button:hover {
+    color: var(--grey900);
+    background-color: var(--green);
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+
+    background-color: var(--green);
+    color: var(--grey900);
+
+    font-size: 11px; 
+    text-align: center;
+}
+
+footer a {
+    color: rgb(71, 136, 71);
+}
+
+@media (max-width: 425px) {
+
+}

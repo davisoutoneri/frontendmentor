@@ -35,31 +35,21 @@
 
 body {
     background-color: var(--eggshell);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    margin: 10rem;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
 
     background-color: var(--white);
     border-radius: 1rem;
-
-    margin: 4rem;
-    padding: 3rem;
-    
-    width: 50%;
-
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    color: var(--wenge-brown);
 }
 
 h1,h2 {
@@ -84,7 +74,23 @@ span{
 
 .image {
     width: 100%;
-    border-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.div-image {
+    width: 100%;
+    
+}
+
+.container {
+    padding: 3rem;
+
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--wenge-brown);
 }
 
 .div-intro{
@@ -150,15 +156,28 @@ span{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    background-color: var(--eggshell);
+}
 
 @media (max-width: 425px) {
     body {
         display: grid;
         grid-template-columns: 1fr;
+        
     }
+
     main {
+        margin: 0;
+    }
+    
+    .container {
         border-radius: 0;
-        padding: 0 0 1rem 0;
+        padding: 1rem;
         margin: 0;
         width: 100%;
     }
