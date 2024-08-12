@@ -3,6 +3,7 @@
     --light-pink: hsl(275, 100%, 97%);
     --grayish-purple: hsl(292, 16%, 49%);
     --dark-purple: hsl(292, 42%, 14%);
+    --pink: #AD28EB;
 
     font-family: "Work Sans", sans-serif;
 }
@@ -30,9 +31,9 @@ body {
 
 main{
     background-color: var(--white);
-    width: 35rem;
     
-
+    
+    margin: 1rem;
     padding: 2rem;
 
     border-radius: 0.5rem;
@@ -86,11 +87,19 @@ main{
 
     transition: color 0.3s ease-in;
 } .div-show__p-question:hover {
-    color: var(--grayish-purple);
+    cursor: pointer;
+    color: var(--pink);
 }
 
 .div-show__button-dropdown  {
-
+    background-image: url('../assets/images/icon-plus.svg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .div-button__p-answer  {
@@ -108,5 +117,11 @@ footer {
 @media (max-width: 375px) {
     body {
         background-image: url('../assets/images/background-pattern-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        width: 100%;
     }
+
+    
 }

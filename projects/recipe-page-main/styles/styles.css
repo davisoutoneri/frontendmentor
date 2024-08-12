@@ -38,18 +38,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10rem 15rem 10rem 15rem;
 }
 
 main {
-    margin: 10rem;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     background-color: var(--white);
-    border-radius: 1rem;
+    border-radius: 2rem;
 }
 
 h1,h2 {
@@ -72,15 +71,21 @@ span{
     font-weight: 700;
 }
 
+.div {
+    margin: 2rem 0 2rem 0;
+}
+
 .image {
+    border-radius: 1rem;
     width: 100%;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
 
+
 .div-image {
     width: 100%;
-    
+    margin-bottom: 1rem;
 }
 
 .container {
@@ -97,11 +102,12 @@ span{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1rem;
+    margin: 1.5rem 0 1rem 0;
+    gap: 0.5rem;
 }
 
 .div-preparation-time{
-    padding: 2rem;
+    padding: 1.5rem;
     background-color: var(--rose-white);
     border-radius: 1rem;
 
@@ -116,12 +122,11 @@ span{
 } 
 
 .div-ingredients {
-    padding-bottom: 1rem;
     border-bottom: solid 1px var(--light-grey);
 } .div-ingredients ul {
-    margin: 1.5rem;
+    padding: 1rem;
 } .div-ingredients ul li {
-    margin-top: 1rem;
+    margin: 0.5rem;
     list-style-type: square;
 }
 
@@ -145,6 +150,7 @@ span{
     gap: 1rem;
 } .div-nutrition table {
     width: 100%;
+    padding: 0 1rem 0rem 1rem;
 }.div-nutrition td {
     padding: 0.5em;
 } .div-nutrition .have-line td{
@@ -168,18 +174,23 @@ footer {
     body {
         display: grid;
         grid-template-columns: 1fr;
-        
+        padding: 0;
     }
 
     main {
         margin: 0;
+        border-radius: 0;
     }
     
     .container {
         border-radius: 0;
-        padding: 1rem;
+        padding: 0;
         margin: 0;
         width: 100%;
+    }
+
+    .div {
+        padding: 1rem;
     }
 
     .image{
