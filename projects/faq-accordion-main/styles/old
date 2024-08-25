@@ -1,0 +1,98 @@
+
+body {
+    padding: 20rem;
+    /* height: 100vh; */
+
+    background-color: var(--light-pink);
+    background-image: url('../assets/images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    background-color: var(--white);
+    
+    
+    margin: 1rem;
+    padding: 2rem;
+
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 20px var(--light-pink);
+}
+
+.main__div-titles {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.div-titles__img-star {
+    width: 2rem;
+    height: auto;
+}
+
+.div-titles__h1-title {
+    font-size: 3rem;
+    color: var(--dark-purple);
+}
+
+.main__div-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-buttons__div-button {
+    padding: 1rem 0 1rem 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.div-button__div-show {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#div-button2, #div-button3, #div-button4 {
+    border-top: 1px solid var(--light-pink);
+}
+
+.div-show__p-question {
+    font-size: 16px;
+    color: var(--dark-purple);
+    font-weight: 700;
+
+    transition: color 0.3s ease-in;
+} .div-show__p-question:hover {
+    cursor: pointer;
+    color: var(--pink);
+}
+
+.div-show__button-dropdown  {
+    background-image: url('../assets/images/icon-plus.svg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.div-button__p-answer  {
+   padding-top: 1rem;
+
+   display: none;
+}
+
+footer {
+
+}
